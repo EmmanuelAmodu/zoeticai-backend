@@ -1,4 +1,4 @@
-# Hourly-App
+# Zoetic API
 
 [API Documentation](https://app.swaggerhub.com/apis/EmmanuelAmodu/ZoeticaiAPI/1.0.0)
 
