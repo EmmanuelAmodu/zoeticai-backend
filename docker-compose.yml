@@ -1,0 +1,22 @@
+version: "3"
+services:
+  node-service:
+    image: zoeticai/node-api:1.5
+    restart: always
+    ports:
+      - "3000:3000"
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    environment:
+      - PORT=3000
+      - MONGOURL=mongodb://mongodb:27017/dev?retryWrites=true&w=majority
+      - SECRET_KEY=LKEMRF30945IENRFI340LLLWPklker943*90!
+
+  mongodb:
+    image: mongo:3.6
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
