@@ -8,6 +8,5 @@ Live AT: 142.93.248.99/api/record
 
 ## Build App
 
-1. `npm i`
 1. `npm run docker:build`
 1. `npm run docker:start`
